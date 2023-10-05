@@ -20,4 +20,7 @@ nemesis_filter_seeds: false
 seeds_num: 1
 
 user_prefix: 'longevity-ParallelAddDropColumnMonkey-3h'
-append_scylla_args: '--logger-log-level migration_manager=trace:group0_raft_sm=trace:raft=trace'
+append_scylla_args: '--logger-log-level migration_manager=trace:group0_raft_sm=trace:raft=trace --system-memory-mb 100'
+
+append_scylla_yaml: |
+  system_memory_mb: 100
